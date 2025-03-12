@@ -66,7 +66,7 @@ namespace SessionSweeper
             bool isRunning = false;
             foreach (Process process in Process.GetProcesses())
             {
-                if (process.ProcessName.Equals("GTA5"))
+                if (process.ProcessName.Equals("GTA5") || process.ProcessName.Equals("GTA5_Enhanced"))
                 {
                     isRunning = true;
                     DataStorage.pGTAV = process;
